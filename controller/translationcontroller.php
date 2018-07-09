@@ -55,6 +55,7 @@ class TranslationController extends ApiController {
 		$translations = array(
 			//'create.notebook' =>  $this->trans->t('Generating sharing keys ( %s / 2)','%step'),
 			'new.notebook' =>  $this->trans->t('New notebook'),
+			'enter.notebook.name' => $this->trans->t('Enter notebook name'),
 			'not.grouped' =>  $this->trans->t('Not in notebook'),
 			'notebook.name' =>  $this->trans->t('Notebook name'),
 			'deleted.notes' =>  $this->trans->t('Deleted notes'),

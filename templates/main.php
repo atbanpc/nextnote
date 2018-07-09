@@ -79,7 +79,7 @@ echo '<script nonce="test"> var shareMode = "'. $_['shareMode'] .'"; var app_con
 			<li class="group" ng-init="add_group = false;">
 				<a class="name app-navigation-noclose" role="button" title="All" ng-click="add_group = true;" ng-hide="add_group">+ {{ 'new.notebook' | translate }}</a>
 				<div ng-show="add_group" class="add_group_container">
-					<input type="text" ng-model="new_group_name" id="new_group_name" placeholder="Enter notebook name">
+					<input type="text" ng-model="new_group_name" id="new_group_name" placeholder="{{ 'enter.notebook.name' | translate | capitalize }}">
 					<div class="button" ng-click="addNotebook(new_group_name); add_group = false;"><i class="fa fa-check"></i> </div>
 					<div class="button" ng-click="add_group = false; new_group_name = '';"><i class="fa fa-times"></i> </div>
 				</div>
